@@ -2,7 +2,7 @@
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 * {
-    font-family: 'Montserrat',  'Noto Sans KR', sans-serif;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
 }
 
 body {
@@ -20,14 +20,22 @@ a {
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 { 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     font-weight: 500;
 }
 
-input, button, textarea {
+input,
+button,
+textarea {
     outline: none;
 }
+
 button {
     cursor: pointer;
 }
@@ -50,24 +58,29 @@ header {
     position: fixed;
     width: 100%;
 }
+
 .banner {
     background-color: #000;
     height: 40px;
     display: flex;
     align-items: center;
 }
+
 .lnb {
     width: 1300px;
     margin: auto;
     text-align: right;
 }
+
 .lnb a {
     color: #ddd;
     margin-right: 10px;
 }
+
 .lnb a:last-child {
     margin-right: 0;
 }
+
 .lnb a em {
     color: #bbb;
 }
@@ -80,18 +93,24 @@ nav {
     align-items: center;
     margin-top: 30px;
 }
+
 .logo {}
+
 .gnb {
     display: flex;
 }
+
 .gnb li {}
+
 .gnb li a {
     margin: 20px;
     color: #fff;
 }
+
 .gnb li a:hover {
     color: #333;
 }
+
 .gnb li a:last-child {
     margin-right: 0;
 }
@@ -104,14 +123,17 @@ nav {
     display: flex;
     align-items: center;
 }
+
 .intro .heading {
     color: #fff;
     text-align: center;
 }
+
 .intro .heading h1 {
     font-size: 70px;
     margin-bottom: 40px;
 }
+
 .intro .heading p {
     font-size: 22px;
     line-height: 1.5rem;
