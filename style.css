@@ -1,0 +1,36 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 5px solid red;
+}
+
+a {
+    text-decoration: none;
+}
+
+.box {
+    /* background: yellowgreen;
+    color: #fff;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.box {
+    background: yellowgreen;
+    color: #fff;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 2em;
+}
