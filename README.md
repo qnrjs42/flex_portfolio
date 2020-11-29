@@ -1,3 +1,39 @@
+## justify-content
+
+```css
+.parent {
+    display: flex;
+    border: 5px solid red;
+    /* justify-content: center;  */
+    /* justify-content: flex-start;  */
+    /* justify-content: flex-end; */
+    /* justify-content: space-around;  */
+    justify-content: space-between; 
+    /* justify-content: space-evenly; */
+    height: 500px;
+}
+.child {
+    background-color: yellowgreen;
+    color: #fff;
+    width: 200px;
+    /* height: 200px; */
+    line-height: 200px;
+    text-align: center;
+    margin: 5px;
+}
+```
+
+parent의 height를 500px 주고,
+child height를 주지 않으면 auto로 설정 되어
+child의 height는 parent의 height에 맞게 설정된다.
+
+즉, parent height 500px이면
+child height도 500px
+
+<br />
+
+---
+
 
 ## 부모, 자식 요소 flex 속성
 
