@@ -7,32 +7,29 @@
     <title>Document</title>
 
     <style>
-        .parent{
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
             display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             border: 5px solid red;
         }
-        .child {
-            background-color: yellowgreen;
+
+        .box {
+            background: yellowgreen;
+            color: #fff;
             width: 200px;
             height: 200px;
-            margin: 5px;
-            color: #fff;
             text-align: center;
             line-height: 200px;
+            font-size: 2em;
         }
     </style>
 </head>
 <body>
-    <div class="parent">
-        <div class="child">
-            자식요소
-        </div>
-        <div class="child">
-            자식요소
-        </div>
-        <div class="child">
-            자식요소
-        </div>
+    <div class="box">
+        자식요소
     </div>
 </body>
 </html>
