@@ -13,39 +13,40 @@
       height: 100vh;
     }
     .container {
-      display: flex;
-    }
-    nav {
-      flex: 1;
-      background-color: #ddd;
-    }
-    main {
-      flex: 5;
+      /* width: 80%; */
     }
     header {
-      background-color: teal;
-      color: #fff;
+      background-color: pink;
       height: 100px;
     }
     section {
       display: flex;
     }
 
+    nav,
     section article,
     section aside {
       height: calc(100vh - 200px);
     }
+
+    section nav {
+      background-color: #eee;
+      /* flex: 1; */
+      /* width: 250px; */
+      flex-basis: 250px;
+    }
     section article {
-      flex: 3;
-      background-color: pink;
+      background-color: #ddd;
+      flex: 4;
     }
     section aside {
-      flex: 1;
-      background-color: yellow;
+      background-color: #ccc;
+      /* flex: 1; */
+      /* width: 250px; */
+      flex-basis: 250px;
     }
     footer {
       background-color: gray;
-      color: #fff;
       height: 100px;
     }
   </style>
@@ -53,15 +54,13 @@
 
 <body>
   <div class="container">
-    <nav>nav</nav>
-    <main>
-      <header>header</header>
-      <section>
-        <article>article</article>
-        <aside>aside</aside>
-      </section>
-      <footer>footer</footer>
-    </main>
+    <header>Header</header>
+    <section>
+      <nav>Nav</nav>
+      <article>Article</article>
+      <aside>Aside</aside>
+    </section>
+    <footer>Footer</footer>
   </div>
 </body>
 
