@@ -1,9 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+    font-family: 'Montserrat',  'Noto Sans KR', sans-serif;
+}
+
 body {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    color: #222;
+    line-height: 1.5em;
+    /* font-weight: normal;  font-weight: 400; */
+    /* font-weight: 500; */
+    /* font-weight: bold;    font-weight: 600; */
 }
 
 a {
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 { margin: 0; }
+h1, h2, h3, h4, h5, h6 { 
+    margin: 0;
+    font-weight: 500;
+}
+
+input, button, textarea {
+    outline: none;
+}
+button {
+    cursor: pointer;
+}
