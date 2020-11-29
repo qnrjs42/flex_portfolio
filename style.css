@@ -7,6 +7,7 @@
 
 body {
     font-size: 15px;
+    font-weight: 300;
     margin: 0;
     color: #222;
     line-height: 1.5em;
@@ -29,4 +30,34 @@ input, button, textarea {
 }
 button {
     cursor: pointer;
+}
+
+/* Common CSS */
+.inner {
+    width: 1300px;
+    margin: auto;
+}
+
+/* Header */
+
+/* Intro */
+.intro {
+    height: 100vh;
+    background: url(images/intro.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.intro .heading {
+    color: #fff;
+    text-align: center;
+}
+.intro .heading h1 {
+    font-size: 70px;
+    margin-bottom: 40px;
+}
+.intro .heading p {
+    font-size: 22px;
+    line-height: 1.5rem;
+    padding: 0 100px;
 }
