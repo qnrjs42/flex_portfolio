@@ -1,3 +1,40 @@
+## .child{$}*12 (emmet) 팁
+
+```html
+<div class="parent">
+    .child{$}*12
+</div>
+
+<div class="parent">
+    <div class="child">1</div>
+    <div class="child">2</div>
+    <div class="child">3</div>
+    <div class="child">4</div>
+    <div class="child">5</div>
+    <div class="child">6</div>
+    <div class="child">7</div>
+    <div class="child">8</div>
+    <div class="child">9</div>
+    <div class="child">10</div>
+    <div class="child">11</div>
+    <div class="child">12</div>
+</div>
+
+.child{$}*12
+
+.child : 클래스 이름이 child
+{$} : 태그안에 1부터 순차적으로 증가하는 값
+*12 : 태그를 12개 생성
+
+즉: child 클래스 이름을 가진 div 태그를 12개를 생성하되 태그안에는 1부터 12까지 값을 입력
+```
+
+
+<br />
+
+
+---
+
 ## justify-content
 
 ```css
