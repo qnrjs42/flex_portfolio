@@ -2,51 +2,64 @@
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 * {
-  font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
 }
 
 body {
-  font-size: 15px;
-  line-height: 1.5em;
-  margin: 0;
-  color: #222;
+    font-size: 15px;
+    line-height: 1.5em;
+    margin: 0;
+    color: #222;
 
 }
 
 a {
-  text-decoration: none;
-  color: #222;
+    text-decoration: none;
+    color: #222;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  margin: 0;
-  font-weight: 500;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: 500;
 }
 
 input,
 button,
 textarea {
-  outline: none;
+    outline: none;
 }
 
 button {
-  cursor: pointer;
-  outline: none;
+    cursor: pointer;
+    outline: none;
 }
 
 ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 /* header */
 header {}
+
 nav {}
+
 .logo {}
+
 .logo img {}
+
 .gnb {}
+
 .gnb li {}
+
 .gnb li a {}
+
 .sns {}
+
 .sns a {}
