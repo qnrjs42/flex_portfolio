@@ -56,7 +56,6 @@ header {
 
 nav {
     /* margin: auto; */
-    border: 3px solid red;
     width: 1280px;
     display: flex;
     justify-content: space-between;
@@ -70,8 +69,8 @@ nav {
 
 .gnb {
     display: flex;
-    flex-direction: column;
     text-align: center;
+
 }
 
 .gnb li {}
@@ -95,6 +94,10 @@ nav {
     color: #000;
 }
 
+.trigger {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     header {
         height: auto;
@@ -103,10 +106,16 @@ nav {
     nav {
         width: 100%;
         flex-direction: column;
+        position: relative;
     }
 
     .logo {
         padding: 10px;
+    }
+
+    .gnb {
+        flex-direction: column;
+        border-top: 1px solid rgba(0, 0, 0, 0.123);
     }
 
     .gnb li {}
@@ -124,5 +133,55 @@ nav {
 
     .sns a {
         color: #222;
+    }
+
+    .gnb,
+    .sns {
+        display: none;
+    }
+
+    .trigger {
+        /* border: 1px solid #000; */
+        display: block;
+        position: absolute;
+        width: 25px;
+        height: 15px;
+        top: 15px;
+        right: 15px;
+    }
+
+    .trigger span {
+        background-color: #fff;
+        height: 1px;
+        /* display: inline-block; */
+        position: absolute;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .trigger span:nth-child(1) {
+        top: 0;
+    }
+
+    .trigger span:nth-child(2) {
+        top: 50%;
+    }
+
+    .trigger span:nth-child(3) {
+        top: 100%;
+    }
+
+    .trigger.active span:nth-child(1) {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+
+    .trigger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .trigger.active span:nth-child(3) {
+        top: 50%;
+        transform: rotate(-45deg);
     }
 }
