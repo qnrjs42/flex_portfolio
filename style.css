@@ -123,6 +123,31 @@ section {
   padding: 7px 50px;
   margin: auto;
   display: block;
-  margin-top: 20px;
-  
+  margin-top: 20px; 
+}
+
+.btn-submit:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .consulting-header h1 {
+    font-size: 22px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+  .row .field {
+    margin: 5px 0;
+  }
+  .btn-submit {
+    width: 100%;
+  }
 }
