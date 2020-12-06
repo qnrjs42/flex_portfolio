@@ -45,7 +45,6 @@ ul {
 }
 
 section {
-    border: 1px solid #000;
     width: 1000px;
     margin: auto;
     display: flex;
@@ -66,11 +65,19 @@ section {
 
 .image {
     width: 250px;
+    border: 1px solid red;
+    overflow: hidden;
 }
 
 .image img {
     width: 100%;
     display: block;
+
+}
+
+.image img:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
 }
 
 .desc {
@@ -86,3 +93,45 @@ section {
 .desc h2 {}
 
 .desc p {}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    section {
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+    }
+
+    .post {
+        display: flex;
+        flex-direction: row !important;
+    }
+
+    .post:nth-child(even) {
+        flex-direction: row-reverse !important;
+    }
+
+    .image,
+    .desc {
+        flex: 1;
+        height: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    section {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        flex-direction: column;
+    }
+
+    .post:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .image {
+        width: 100%;
+    }
+}
