@@ -56,3 +56,53 @@ section {
   color: #444;
 }
 .class-header p {}
+
+/* items */
+.items {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+/* item */
+.item {
+  border: 1px solid #000;
+  height: 350px;
+  flex: 1;
+}
+.item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.item img {
+  width: 100%;
+}
+.item h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.category {
+  font-weight: bold;
+  color: skyblue;
+}
+.item p {
+  margin: 5px 0;
+}
+.item p .fa {
+  color: gold;
+}
+.item p em {
+  font-style: normal;
+  font-size: 13px;
+}
+.price {
+  font-weight: bold;
+  color: royalblue;
+  display: block;
+  margin-bottom: 5px;
+}
+.badge {
+  background-color: pink;
+  font-size: 14px;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
