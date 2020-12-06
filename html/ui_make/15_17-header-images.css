@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+}
+
+body {
+    font-size: 15px;
+    /* line-height: 1.5em; */
+    margin: 0;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: 500;
+}
+
+input,
+button,
+textarea {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+section {
+    /* border: 1px solid #000; */
+    width: 950px;
+    margin: auto;
+}
+
+.section-header {}
+
+.gnb {
+    padding: 30px 0;
+    text-align: right;
+}
+
+.gnb a {
+    margin: 15px;
+    position: relative;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.gnb a:last-child {
+    margin-right: 0;
+}
+
+.gnb a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: 0.3s;
+}
+
+.gnb a:hover:after {
+    width: 100%;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-box input {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+    padding: 5px;
+    background: url(images/search.png) no-repeat center right;
+    background-size: 23px;
+    width: 300px;
+}
+
+.search-box button {
+    border: none;
+    background-color: crimson;
+    color: #fff;
+    padding: 15px 60px;
+    border-radius: 6px;
+    font-size: 18px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.424);
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background-color: black;
+}
+
+.search-box input:focus::placeholder {
+    /* opacity: 0; */
+    visibility: hidden;
+}
+
+/* Items */
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.item {
+    width: 310px;
+    height: 200px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.item img {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    section {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .gnb {
+        text-align: center;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box input {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .item {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    section {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .item {
+        width: 49%;
+        height: 250px;
+        margin-bottom: 2px;
+    }
+}
