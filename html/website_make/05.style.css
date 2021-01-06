@@ -146,31 +146,39 @@ nav {
   display: flex;
   padding: 100px 0;
 }
+
 .about-content div {
   padding: 30px;
 }
+
 .desc {
   text-align: center;
   flex: 3;
 }
+
 .desc h2 {
   font-size: 30px;
   margin-bottom: 30px;
 }
+
 .desc p {
   font-size: 16px;
   line-height: 1.7em;
 }
+
 .desc a {
   color: #000;
   font-weight: bold;
 }
+
 .desc a:hover {
   text-decoration: underline;
 }
+
 .photo {
   flex: 2;
 }
+
 .photo img {
   width: 100%;
   border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
