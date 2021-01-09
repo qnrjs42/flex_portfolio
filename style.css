@@ -55,9 +55,10 @@ ul {
 
 /* Header */
 header {
-  /* position: fixed; */
-  position: absolute;
+  position: fixed;
+  /* position: absolute; */
   width: 100%;
+  transition: 0.7s;
 }
 
 .banner {
@@ -114,6 +115,21 @@ nav {
 
 .gnb li a:last-child {
   margin-right: 0;
+}
+
+/* Header with active class */
+header.active {
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.205);
+}
+header.active .gnb li a {
+  color: #000;
+}
+header.active .banner {
+  display: none;
+}
+header.active nav {
+  padding-bottom: 20px;
 }
 
 /* Intro */
