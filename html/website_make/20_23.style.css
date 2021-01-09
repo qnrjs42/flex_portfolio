@@ -32,6 +32,7 @@ h5,
 h6 {
   margin: 0;
   font-weight: 500;
+  line-height: 1.2em;
 }
 
 input,
@@ -123,6 +124,10 @@ nav {
   margin-right: 0;
 }
 
+.trigger {
+  display: none;
+}
+
 /* Header with active class */
 header.active {
   background-color: #fff;
@@ -174,19 +179,19 @@ header.active nav {
   align-items: center;
 }
 
-.intro .heading {
+.heading {
   color: #fff;
   text-align: center;
 }
 
-.intro .heading h1 {
+.heading h1 {
   font-size: 70px;
   margin-bottom: 40px;
 }
 
-.intro .heading p {
+.heading p {
   font-size: 22px;
-  line-height: 1.5rem;
+  line-height: 1.5em;
   padding: 0 100px;
 }
 
