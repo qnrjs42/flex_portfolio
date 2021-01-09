@@ -1,12 +1,11 @@
-$(function() {
-
+$(function () {
   // Header Scroll Change
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(window).scrollTop() > 50) {
-      $('header').addClass('active');
-    }
-    else {
-      $("header").removeClass('active');
+      $("header, .goto-top").addClass("active");
+    } else {
+      $("header").removeClass("active");
+      $("header, .goto-top").removeClass("active");
     }
   });
 
@@ -50,4 +49,4 @@ $(function() {
       // instead of a settings object
     ],
   });
-})
+});
