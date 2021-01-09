@@ -1,5 +1,11 @@
 $(function() {
 
+  // Sliding jQuery
+  $('.gnb a, .goto-top').click(function(e) {
+    $.scrollTo(this.hash || 0, 800);
+    e.preventDefault();
+  });
+
   // Header Scroll Change
   $(window).scroll(function() {
     if ($(window).scrollTop() > 50) {
